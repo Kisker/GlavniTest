@@ -23,18 +23,11 @@ public class Avion {
         @ForeignCollectionField(foreignFieldName = "avion")
         private ForeignCollection<Roba> roba;
 
-        /**
-         * Konstruktor bez parametara, potreban za ORMLite
-         */
+
         public Avion() {
             //Obavezan za potrebe ORMLite-a
         }
 
-        /**
-         * Konstrutkor koji ocekuje parametre oznaka i rasponKrila
-         * @param oznaka oznaka aviona
-         * @param rasponKrila raspone krila aviona
-         */
         public Avion(String oznaka, int rasponKrila) {
             this.oznaka = oznaka;
             this.rasponKrila = rasponKrila;
