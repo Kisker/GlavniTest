@@ -22,10 +22,7 @@ public class Roba {
     @DatabaseField(foreign = true,foreignAutoRefresh = true, canBeNull = true)
     private Avion avion;
 
-    /**
-     * Konstruktor bez parametara, potreban za ORMLite
-     */
-    public Roba() {
+    public Roba(String naziv, String opis, double tezina) {
         //Obavezan za potrebe ORMLite-a
     }
 
@@ -33,12 +30,8 @@ public class Roba {
      * Konstrutkor sa parametrima naziv, opis, tezina, visina, duzina i sirina
      * @param naziv naziv robe
      * @param opis opis robe
-     * @param tezina tezina robe
-     * @param visina visina robe
-     * @param duzina duzina robe
-     * @param sirina sirina robe
      */
-    public Roba(String naziv, String opis, double tezina, double visina, double duzina, double sirina) {
+    public Roba(String naziv, String opis) {
         this.naziv = naziv;
         this.opis = opis;
         this.tezina = tezina;
