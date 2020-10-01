@@ -54,9 +54,9 @@ public class Zadatak2DodavanjeVrednosti {
             robaDao.create(r5);
 
             List<Roba> robe=robaDao.queryForAll();
-            for(Roba r:robe) {
+            for(Roba r:robe)
                 System.out.println("Roba = " + r);
-            }
+
 
             List<Avion> avioni=avionDao.queryForAll();
             for(Avion as:avioni)

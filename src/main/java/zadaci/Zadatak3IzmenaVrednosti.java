@@ -23,20 +23,13 @@ public class Zadatak3IzmenaVrednosti {
             robaDao = DaoManager.createDao(connectionSource, Roba.class);
 
             List<Roba> robe=robaDao.queryForAll();
-            for(Roba r:robe) {
+            for(Roba r:robe)
                 System.out.println("Roba = " + r);
-            }
 
             List<Roba> pronadjenaRoba=robaDao.queryForEq(Roba.POLJE_OPIS,"plasticna stolica");
-            Roba robaZaIzmenu=pronadjenaRoba.get(0);//Preuzimamo prvi pronadjeni
-            //Menjamo vrednost atributa opis na Drvena stolica
+            Roba robaZaIzmenu=pronadjenaRoba.get(0);
             robaZaIzmenu.setOpis("Drvena stolica");
-            //Cuvamo izmene u bazi, menja se vrednost kolone opis
             robaDao.update(robaZaIzmenu);
-
-            /*Prikaz vrednosti tabele Roba
-               da potvrdimo da je vrednost izmenjena
-             */
             robe=robaDao.queryForAll();
             for(Roba r:robe)
                 System.out.println("Roba = " + r);
