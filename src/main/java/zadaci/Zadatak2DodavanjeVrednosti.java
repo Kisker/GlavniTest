@@ -1,2 +1,4 @@
-package zadaci;public class Zadatak2DodavanjeVrednosti {
+package zadaci;
+
+public class Zadatak2DodavanjeVrednosti {
 }

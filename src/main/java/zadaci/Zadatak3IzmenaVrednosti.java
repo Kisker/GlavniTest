@@ -1,2 +1,4 @@
-package zadaci;public class Zadatak3IzmenaVrednosti {
+package zadaci;
+
+public class Zadatak3IzmenaVrednosti {
 }
